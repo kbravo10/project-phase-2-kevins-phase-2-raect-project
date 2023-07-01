@@ -1,5 +1,8 @@
 # ZEN SUBSCRIPTIONS
 
+## backend project link
+https://github.com/kbravo10/json-server-template.git
+
 This project is to show my skills in the REACT library. This project displays a list of the subscription the user has. The user can either add or remove subscription.
 
 ## Project requirements
