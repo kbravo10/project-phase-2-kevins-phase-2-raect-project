@@ -18,7 +18,7 @@ function AddSubscription() {
         submitForm.subscriptionType = "miscellaneous";
       }
       submitForm.price = parseFloat(submitForm.price);
-      fetch(`http://localhost:3000/subscriptions`, {
+      fetch(`http://localhost:3210/subscriptions`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

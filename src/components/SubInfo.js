@@ -17,7 +17,7 @@ function SubInfo() {
   //use fetch method to aquire the data
   //useEffect to only render once to prevent loop or multiple renders
   useEffect(() => {
-    fetch(`http://localhost:3000/subscriptions/${params.id}`)
+    fetch(`http://localhost:3210/subscriptions/${params.id}`)
       .then((res) => res.json())
       .then((data) => setSubscription((subscrption) => (subscrption = data)));
   }, [params.id]);
@@ -28,7 +28,7 @@ function SubInfo() {
       `Are you SURE you want to remove ${subscrption.type} from list?`
     );
     if (userConfirm) {
-      fetch(`http://localhost:3000/subscriptions/${subscrption.id}`, {
+      fetch(`http://localhost:3210/subscriptions/${subscrption.id}`, {
         method: "DELETE",
         headers: {
           "Content-Type": "application/json",
@@ -45,7 +45,7 @@ function SubInfo() {
   function onHandlePriceChange(event) {
     event.preventDefault();
     console.log(event.target.newPrice.value);
-    fetch(`http://localhost:3000/subscriptions/${params.id}`, {
+    fetch(`http://localhost:3210/subscriptions/${params.id}`, {
       method: "PATCH",
       headers: {
         "Content-Type": "application/json",

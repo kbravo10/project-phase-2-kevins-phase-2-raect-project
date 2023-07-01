@@ -10,11 +10,11 @@ function SubcriptionCollection() {
 
   //useEffect that only renders once when the application loads and fetchges data from backend
   useEffect(() => {
-    fetch(`http://localhost:3000/subscriptions${filter}`)
+    fetch(`http://localhost:3210/subscriptions${filter}`)
       .then((res) => res.json())
       .then((data) => {
         setSubscriptions((subscriptions) => (subscriptions = data));
-      });
+      })
   }, [filter]);
 
   //receives the event and sets filter state accordinly based on user input
