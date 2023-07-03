@@ -3,6 +3,10 @@
 ## backend project link
 https://github.com/kbravo10/json-server-template.git
 
+## deployed
+https://reliable-crostata-9180ae.netlify.app/subscription         front end
+https://flatiron-phase-2-backend-project.onrender.com             backend
+
 This project is to show my skills in the REACT library. This project displays a list of the subscription the user has. The user can either add or remove subscription.
 
 ## Project requirements
